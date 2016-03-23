@@ -56,7 +56,7 @@ namespace BandSensorDemo
 
                 // Receive data for a while, then stop the subscription
                 await Task.Delay(TimeSpan.FromSeconds(5));
-                await bandClient.SensorManager.AmbientLight.StopReadingsAsync();
+                await bandClient.SensorManager.SkinTemperature.StopReadingsAsync();
             }
         }
     }
